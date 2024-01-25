@@ -3,6 +3,8 @@
 -- Add any additional options here
 local opt = vim.opt
 
+vim.b.autoformat = false
+
 -- line numbers
 opt.relativenumber = true
 opt.number = true
