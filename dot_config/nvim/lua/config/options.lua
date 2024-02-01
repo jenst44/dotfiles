@@ -3,15 +3,15 @@
 -- Add any additional options here
 local opt = vim.opt
 
-vim.b.autoformat = false
+vim.g.autoformat = false
 
 -- line numbers
 opt.relativenumber = true
 opt.number = true
 
 -- tabs & indentation
-opt.tabstop = 4
-opt.shiftwidth = 4
+opt.tabstop = 5
+opt.shiftwidth = 5
 opt.expandtab = true
 opt.autoindent = true
 
@@ -48,6 +48,6 @@ opt.splitright = true
 opt.splitbelow = true
 
 -- scroll
-opt.scrolloff = 8
+opt.scrolloff = 9
 
 opt.iskeyword:append("-")
