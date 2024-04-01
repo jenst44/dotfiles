@@ -1,5 +1,6 @@
 return {
 	"ThePrimeagen/harpoon",
+    enabled = false,
 	lazy = false,
 	dependencies = {
 		"nvim-lua/plenary.nvim",

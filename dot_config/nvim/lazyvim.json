@@ -5,10 +5,11 @@
     "lazyvim.plugins.extras.lang.markdown",
     "lazyvim.plugins.extras.lang.omnisharp",
     "lazyvim.plugins.extras.lang.typescript",
-    "lazyvim.plugins.extras.lsp.none-ls"
+    "lazyvim.plugins.extras.lsp.none-ls",
+    "lazyvim.plugins.extras.util.project"
   ],
   "news": {
-    "NEWS.md": "2123"
+    "NEWS.md": "2850"
   },
-  "version": 2
+  "version": 3
 }

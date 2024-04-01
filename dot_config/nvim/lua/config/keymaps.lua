@@ -9,12 +9,11 @@ local opts = { noremap = true, silent = true }
 keymap.set("n", "+", "<C-a>")
 keymap.set("n", "-", "<C-x>")
 
+-- Select All
 keymap.set("n", "<C-a>", "gg<S-v>G")
 
 keymap.set("i", "jk", "<ESC>")
 keymap.set("n", "<leader>nh", ":nohl<CR>")
-
-keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 keymap.set("v", "K", ":m '<-2<CR>gv=gv")
@@ -42,18 +41,26 @@ keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
-keymap.set("n", "<leader>vpp", "<cmd>e ~/.dotfiles/nvim/.config/nvim/lua/theprimeagen/packer.lua<CR>")
 keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>")
 
-keymap.set("n", "<leader><leader>", function()
-  vim.cmd("so")
-end)
-
 -- window management
-keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
-keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally
-keymap.set("n", "<leader>se", "<C-w>=") -- make split windows equal width & height
+keymap.set("n", "<leader>sv", "<C-w>v")     -- split window vertically
+keymap.set("n", "<leader>sh", "<C-w>s")     -- split window horizontally
+keymap.set("n", "<leader>se", "<C-w>=")     -- make split windows equal width & height
 keymap.set("n", "<leader>sx", ":close<CR>") -- close current split window
 
--- nvim-tree
-keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
+-- lazydocker
+vim.keymap.set("n", "<leader>ld", "<cmd>LazyDocker<CR>", { desc = "Toggle LazyDocker", noremap = true, silent = true })
+
+keymap.set("n", "<leader>fg", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>")
+keymap.set("n", "<leader>/", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>")
+keymap.set("n", "<leader>ag", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>")
+
+-- mini-files
+keymap.set("n", "<leader>fe", ":lua require('mini.files').open()<CR>")
+
+-- Project
+keymap.set("n", "<leader>pl", ":Telescope neovim-project discover<CR>")
+
+-- Oil
+keymap.set("n", "<leader>o", ":Oil<CR>")
