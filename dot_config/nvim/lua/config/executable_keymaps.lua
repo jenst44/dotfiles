@@ -2,7 +2,6 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 local keymap = vim.keymap
-local opts = { noremap = true, silent = true }
 
 -- general keymaps
 
@@ -31,10 +30,7 @@ keymap.set("n", "<leader>Y", [["+Y]])
 
 keymap.set("n", "Q", "<nop>")
 keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
-keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
--- keymap.set("v", "<C-k>", "<cmd>cnext<CR>zz")
--- keymap.set("v", "<C-j>", "<cmd>cprev<CR>zz")
 keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
