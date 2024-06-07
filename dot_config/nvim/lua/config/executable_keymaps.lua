@@ -3,6 +3,9 @@
 -- Add any additional keymaps here
 local keymap = vim.keymap
 
+
+-- vim.api.nvim_create_user_command("Q", "<cmd>q<CR>", {desc = "Quit"});_
+vim.api.nvim_create_user_command('Q', "lua vim.cmd('quit')", {desc = 'Quit'});
 -- general keymaps
 
 keymap.set("n", "+", "<C-a>")
