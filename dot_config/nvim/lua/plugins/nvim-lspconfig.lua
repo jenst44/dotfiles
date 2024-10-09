@@ -3,6 +3,7 @@ return {
   opts = {
     format = {
       formatting_opts = nil
-    }
+    },
+    inlay_hints = { enabled = false }
   }
 }

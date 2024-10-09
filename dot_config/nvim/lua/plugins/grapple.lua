@@ -1,6 +1,7 @@
 return {
     {
         "cbochs/grapple.nvim",
+        lazy = true,
         dependencies = {
             { "nvim-tree/nvim-web-devicons", lazy = true }
         },
@@ -18,7 +19,8 @@ return {
             {
                 "<leader>gd",
                 ":Grapple select name=",
-            desc = "Grapple deploy" },
+                desc = "Grapple deploy"
+            },
         }
     }
 }

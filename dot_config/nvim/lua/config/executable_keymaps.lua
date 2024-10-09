@@ -51,9 +51,9 @@ keymap.set("n", "<leader>sx", ":close<CR>") -- close current split window
 -- lazydocker
 vim.keymap.set("n", "<leader>ld", "<cmd>LazyDocker<CR>", { desc = "Toggle LazyDocker", noremap = true, silent = true })
 
-keymap.set("n", "<leader>fg", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>")
-keymap.set("n", "<leader>/", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>")
-keymap.set("n", "<leader>ag", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>")
+-- keymap.set("n", "<leader>fg", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>")
+-- keymap.set("n", "<leader>/", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>")
+-- keymap.set("n", "<leader>ag", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>")
 
 -- mini-files
 keymap.set("n", "<leader>fe", ":lua require('mini.files').open()<CR>")

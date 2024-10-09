@@ -1,6 +1,8 @@
 return {
   {
     "zbirenbaum/copilot.lua",
+    enabled = false,
+    lazy = true,
     cmd = "Copilot",
     build = ":Copilot auth",
     opts = {
