@@ -8,8 +8,8 @@ local keymap = vim.keymap
 vim.api.nvim_create_user_command('Q', "lua vim.cmd('quit')", {desc = 'Quit'});
 -- general keymaps
 
-keymap.set("n", "+", "<C-a>")
-keymap.set("n", "-", "<C-x>")
+-- keymap.set("n", "+", "<C-a>")
+-- keymap.set("n", "-", "<C-x>")
 
 -- Select All
 keymap.set("n", "<C-a>", "gg<S-v>G")

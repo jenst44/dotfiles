@@ -49,5 +49,13 @@ opt.splitbelow = true
 
 -- scroll
 opt.scrolloff = 9
+opt.smoothscroll = false;
+vim.g.snacks_animate = false;
 
 opt.iskeyword:append("-")
+
+-- .inc to php
+vim.api.nvim_create_autocmd({"BufNewFile", "BufRead"}, {
+    pattern = "*.inc",
+    command = "set filetype=php",
+})
